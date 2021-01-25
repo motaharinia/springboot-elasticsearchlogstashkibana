@@ -1,4 +1,4 @@
-package com.motaharinia.profileproperties;
+package com.motaharinia.elasticsarchlogstashkibana;
 
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;

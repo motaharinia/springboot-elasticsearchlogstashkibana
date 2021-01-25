@@ -8,6 +8,7 @@ further references:
 - https://piotrminkowski.com/2019/10/02/using-logstash-logging-spring-boot-starter-for-logging-with-spring-boot-and-logstash/
 - https://www.javainuse.com/spring/springboot-microservice-elk
 - https://dzone.com/articles/sprinkle-some-elk-on-your-spring-boot-logs
+- https://www.youtube.com/watch?v=BhmpDtS7g28
 
 
 ### Project Descriptions:
@@ -62,8 +63,9 @@ output {
 ```
 - Run the "logstash-7.10.1/bin/logstash.bat -f logstash.conf" using the command prompt(command prompt should remain opened). logstash can then be accessed at "http://localhost:9600"
 - Start the spring boot application. Logs will be generated in ElasticsearchLogstashKibana.log.
-- goto "http://localhost:8080/elk" and "http://localhost:8080/exception" 
+- goto "http://localhost:8080/member/info" and "http://localhost:8080/member/error" 
 - go to kibana UI "http://localhost:5601" console- localhost and create an index pattern logstash-* [Left Menu > Stack Management > Index Patterns > Create index pattern]
+- go to kibana UI "http://localhost:5601" console- localhost and create scripted fields(which defined in java application with kv) in logstash-* [Left Menu > Stack Management > Index Patterns > logstash-* > Scripted Fields > Add Scripted Field]
 - go to kibana UI "http://localhost:5601" console- localhost and discover logs [Left Menu > Discover > Index Patterns > Create index pattern]
 
 ### IntellliJ IDEA Configurations:
